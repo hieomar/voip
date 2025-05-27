@@ -8,6 +8,14 @@
     ],
     "routes": [
         {
+            "src": "/images/(.*)",
+            "dest": "/api/images/$1"
+        },
+        {
+            "src": "/styles.css",
+            "dest": "/api/styles.css"
+        },
+        {
             "src": "/(.*)",
             "dest": "index.php"
         }
