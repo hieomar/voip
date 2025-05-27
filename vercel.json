@@ -1,83 +1,19 @@
 {
     "version": 2,
-    "functions": {
-        "api/**/*.php": {
-            "runtime": "vercel-php@0.6.0"
+    "builds": [
+        {
+            "src": "index.php",
+            "use": "vercel-php"
         }
-    },
+    ],
     "routes": [
         {
-            "src": "/images/(.*)",
-            "dest": "/images/$1"
-        },
-        {
-            "src": "/styles.css",
-            "dest": "/styles.css"
-        },
-        {
-            "src": "/content.pdf",
-            "dest": "/content.pdf"
-        },
-        {
-            "src": "/index.php",
-            "dest": "/api/index.php"
-        },
-        {
-            "src": "/about.php",
-            "dest": "/api/about.php"
-        },
-        {
-            "src": "/company.php",
-            "dest": "/api/company.php"
-        },
-        {
-            "src": "/demo.php",
-            "dest": "/api/demo.php"
-        },
-        {
-            "src": "/faq.php",
-            "dest": "/api/faq.php"
-        },
-        {
-            "src": "/lang.php",
-            "dest": "/api/lang.php"
-        },
-        {
-            "src": "/partner-program.php",
-            "dest": "/api/partner-program.php"
-        },
-        {
-            "src": "/professional-services.php",
-            "dest": "/api/professional-services.php"
-        },
-        {
-            "src": "/resources.php",
-            "dest": "/api/resources.php"
-        },
-        {
-            "src": "/saas.php",
-            "dest": "/api/saas.php"
+            "src": "/(.*)",
+            "dest": "index.php"
         },
         {
             "src": "/solutions.php",
-            "dest": "/api/solutions.php"
-        },
-        {
-            "src": "/Untitled-1.php",
-            "dest": "/api/Untitled-1.php"
-        },
-        {
-            "src": "/",
-            "dest": "/api/index.php"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/api/$1.php"
+            "dest": "solutions.php"
         }
-    ],
-    "build": {
-        "env": {
-            "NOW_PHP_DEBUG": "1"
-        }
-    }
+    ]
 }
