@@ -25,11 +25,11 @@
         },
         {
             "src": "/(.*)",
-            "dest": "/about.php"
+            "dest": "about.php"
         },
         {
-            "src": "/company.php",
-            "dest": "/company.php"
+            "src": "company.php",
+            "dest": "company.php"
         },
         {
             "src": "/demo.php",
