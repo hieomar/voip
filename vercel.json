@@ -8,8 +8,12 @@
     ],
     "routes": [
         {
-            "src": "/images/(.*).(.*)",
-            "dest": "/images/$1.$2"
+            "src": "/images/(.*)",
+            "dest": "/images/$1"
+        },
+        {
+            "src": "/(.*\\.(jpg|jpeg|png|gif|svg|webp|ico|css|js))",
+            "dest": "/$1"
         },
         {
             "src": "/(.*)\\.php",
