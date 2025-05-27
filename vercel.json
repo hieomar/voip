@@ -24,7 +24,7 @@
             "dest": "index.php"
         },
         {
-            "src": "/about.php",
+            "src": "/(.*)",
             "dest": "/about.php"
         },
         {
