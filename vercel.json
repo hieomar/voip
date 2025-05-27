@@ -30,8 +30,5 @@
         "NOW_PHP_DEBUG": "1"
     },
     "name": "voipsavvy",
-    "version": "1.0.0",
-    "scripts": {
-        "build": "echo 'Building PHP application'"
-    }
+    "version": "1.0.0"
 }
