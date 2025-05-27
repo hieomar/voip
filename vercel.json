@@ -4,12 +4,19 @@
         {
             "src": "*.php",
             "use": "vercel-php"
+        },
+        {
+            "src": "images/**",
+            "use": "@vercel/static"
         }
     ],
     "routes": [
         {
-            "src": "/images/(.*)",
-            "dest": "/images/$1"
+            "handle": "filesystem"
+        },
+        {
+            "src": "/images/(?<image>.*)",
+            "dest": "/images/$image"
         },
         {
             "src": "/(.*\\.(jpg|jpeg|png|gif|svg|webp|ico|css|js))",
