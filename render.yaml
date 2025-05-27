@@ -1,7 +1,0 @@
-services:
-  - type: web
-    name: voip-website
-    env: docker
-    dockerfilePath: ./Dockerfile
-    plan: starter
-    healthCheckPath: /
