@@ -1,15 +1,14 @@
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "index.php",
-            "use": "vercel-php"
+    "functions": {
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
         }
-    ],
+    },
     "routes": [
         {
             "src": "/images/(.*)",
-            "dest": "/images/(.*)"
+            "dest": "/images/$1"
         },
         {
             "src": "/styles.css",
@@ -20,52 +19,65 @@
             "dest": "/content.pdf"
         },
         {
-            "src": "/(.*)",
-            "dest": "index.php"
+            "src": "/index.php",
+            "dest": "/api/index.php"
         },
         {
-            "src": "/(.*)",
-            "dest": "about.php"
+            "src": "/about.php",
+            "dest": "/api/about.php"
         },
         {
-            "src": "company.php",
-            "dest": "company.php"
+            "src": "/company.php",
+            "dest": "/api/company.php"
         },
         {
             "src": "/demo.php",
-            "dest": "/demo.php"
+            "dest": "/api/demo.php"
         },
         {
             "src": "/faq.php",
-            "dest": "/faq.php"
+            "dest": "/api/faq.php"
         },
         {
             "src": "/lang.php",
-            "dest": "/lang.php"
+            "dest": "/api/lang.php"
         },
         {
             "src": "/partner-program.php",
-            "dest": "/partner-program.php"
+            "dest": "/api/partner-program.php"
         },
         {
             "src": "/professional-services.php",
-            "dest": "/professional-services.php"
+            "dest": "/api/professional-services.php"
         },
         {
             "src": "/resources.php",
-            "dest": "/resources.php"
+            "dest": "/api/resources.php"
         },
         {
             "src": "/saas.php",
-            "dest": "/saas.php"
+            "dest": "/api/saas.php"
         },
         {
             "src": "/solutions.php",
-            "dest": "/solutions.php"
+            "dest": "/api/solutions.php"
         },
         {
             "src": "/Untitled-1.php",
-            "dest": "/Untitled-1.php"
+            "dest": "/api/Untitled-1.php"
+        },
+        {
+            "src": "/",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/api/$1.php"
         }
-    ]
+    ],
+    "build": {
+        "env": {
+            "NOW_PHP_DEBUG": "1"
+        }
+    }
 }
