@@ -22,6 +22,50 @@
         {
             "src": "/(.*)",
             "dest": "index.php"
-        }
+        },
+        {
+            "src": "/about.php",
+            "dest": "/about.php"
+        },
+        {
+            "src": "/company.php",
+            "dest": "/company.php"
+        },
+        {
+            "src": "/demo.php",
+            "dest": "/demo.php"
+        },
+        {
+            "src": "/faq.php",
+            "dest": "/faq.php"
+        },
+        {
+            "src": "/lang.php",
+            "dest": "/lang.php"
+        },
+        {
+            "src": "/partner-program.php",
+            "dest": "/partner-program.php"
+        },
+        {
+            "src": "/professional-services.php",
+            "dest": "/professional-services.php"
+        },
+        {
+            "src": "/resources.php",
+            "dest": "/resources.php"
+        },
+        {
+            "src": "/saas.php",
+            "dest": "/saas.php"
+        },
+        {
+            "src": "/solutions.php",
+            "dest": "/solutions.php"
+        },
+        {
+            "src": "/Untitled-1.php",
+            "dest": "/Untitled-1.php"
+        },
     ]
 }
