@@ -28,7 +28,5 @@
     ],
     "env": {
         "NOW_PHP_DEBUG": "1"
-    },
-    "name": "voipsavvy",
-    "version": "1.0.0"
+    }
 }
