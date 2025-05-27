@@ -6,11 +6,32 @@
     },
     "routes": [
         {
+            "src": "/favicon.ico",
+            "dest": "/api/favicon.ico"
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/api/images/$1"
+        },
+        {
+            "src": "/styles.css",
+            "dest": "/api/styles.css"
+        },
+        {
             "src": "/(.*)",
+            "dest": "/api/$1.php"
+        },
+        {
+            "src": "/",
             "dest": "/api/index.php"
         }
     ],
     "env": {
         "NOW_PHP_DEBUG": "1"
+    },
+    "name": "voipsavvy",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "echo 'Building PHP application'"
     }
 }
